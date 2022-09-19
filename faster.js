@@ -10,8 +10,6 @@ let options = document.getElementsByClassName("options");
 let list = document.getElementById("list");
 let arrow = document.getElementById("arrow");
 
-
-
 // options
 for(option of options){
     option.onclick = function(){
@@ -36,19 +34,6 @@ function addloading() {
 
 window.onload = addloading();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // start menu
 menuu.addEventListener('click', () =>{
     menuu.classList.toggle('fa-times');
@@ -67,14 +52,6 @@ window.onscroll = () =>{
     }
 }
 // end menu
-
-
-
-
-
-
-
-
 
 // start home
 var swiper = new Swiper(".home-slider", {
@@ -107,19 +84,6 @@ function randomm(){
 }
 
 setInterval(randomm, 10000);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
