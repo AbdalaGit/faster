@@ -26,6 +26,17 @@ selectField.onclick = function(){
     arrow.classList.toggle("rotate");
 }
 
+function loading() {
+    document.querySelector(".Loading").classList.add("STOP");
+}
+
+function addloading() {
+    setInterval(loading, 3500);
+}
+
+window.onload = addloading();
+
+
 
 
 
