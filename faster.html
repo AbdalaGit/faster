@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+  <!------------------------------------------------------------>
+  <!------------------------Start Head-------------------------->
+  <!------------------------------------------------------------>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="dscription"
+      content="موقع مطاعم سريعة هو يضم كل مطاعم الاكل السريع تستطيع تختار المطعم الذي تريده"
+    />
+
+    <meta
+      name="keywords"
+      content="مطاعم سريعة , مطعم , اكلات سريعة , ماك , كنتاكي , بيتزا , اكل , طعام"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="abdala">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa+Ink:wght@400;700&family=Cormorant+SC:wght@300;400;500;700&family=Meow+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="faster.css" />
+    <link rel="icon" href="logo2.jpg" type="img"/>
+    <title>مطاعم سريعة</title>
+  </head>
+  <!------------------------------------------------------------>
+  <!------------------------End Head---------------------------->
+  <!------------------------------------------------------------>
+
+  <body>
+    <!------------------------------------------------------------>
+    <!------------------------Start Body-------------------------->
+    <!------------------------------------------------------------>
+
+    <!------------------------------------------------------------>
+    <!------------------------Start Setting----------------------->
+    <!------------------------------------------------------------>
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-gear fa-spin"></i>
+      </div>
+
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+
+          <ul class="colors-list">
+            <li class="active" data-color="#ff0000"></li>
+            <li data-color="#008cff"></li>
+            <li data-color="#ff5100"></li>
+            <li data-color="#eeff00"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------End Setting------------------------->
+    <!------------------------------------------------------------>
+
+    <!------------------------------------------------------------>
+    <!------------------------Start Header------------------------>
+    <!------------------------------------------------------------>
+
+    <header>
+      <a href="faster.css" class="logo"><img src="logo2.jpg" /> مطاعم سريعة</a>
+
+      <nav class="navbar">
+        <ul class="list">
+          <li class="link"><a href="faster.css">الصفحة الرئيسية</a></li>
+          <li class="link"><a href="#who">من نحن</a></li>
+          <li class="link"><a href="#home">العروض الحالية</a></li>
+          <li class="link"><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="selector">
+        <div id="selectField">
+          <p id="selectText">اشهر المطاعم</p>
+          <i class="fa-solid fa-angle-down" id="arrow"></i>
+        </div>
+
+        <ul id="list" class="hide">
+          <a href="https://www.egypt.kfc.me/ar/" target="_blank">
+            <li class="options">
+              <img src="kfclogo.png" alt="img" />
+              <p>كنتاكي</p>
+            </li>
+          </a>
+
+          <a href="https://www.mcdonalds.eg/ar/" target="_blank">
+            <li class="options">
+              <img src="mac.png" alt="img" />
+              <p>ماكدونز</p>
+            </li>
+          </a>
+
+          <a href="https://www.papajohnsegypt.com/?lang=ar" target="_blank">
+            <li class="options">
+              <img src="papajons.png" alt="img" />
+              <p>بابا جونز</p>
+            </li>
+          </a>
+
+          <a href="https://www.bk.com/" target="_blank">
+            <li class="options">
+              <img src="brgerking.png" alt="img" />
+              <p>برجر كينج</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="search-box">
+        <input type="search" class="search" id="s" placeholder="بحث" />
+        <a href="" class="search-btn">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+    <!------------------------------------------------------------>
+    <!------------------------End Header-------------------------->
+    <!------------------------------------------------------------>
+
+    <!------------------------------------------------------------>
+    <!------------------------Start Main-------------------------->
+    <!------------------------------------------------------------>
+    <section class="main">
+      <span class="overlay"></span>
+
+      <div class="text-main">
+        <h1>مرحبا بك</h1>
+        <div class="line"></div>
+        <p>اطلب الاطعمة السريعة من المطعم المفضل لك</p>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------>
+    <!------------------------End Main---------------------------->
+    <!------------------------------------------------------------>
+
+    <!------------------------------------------------------------>
+    <!------------------------Start who--------------------------->
+    <!------------------------------------------------------------>
+    <section class="who" id="who">
+      <div class="text-footer">
+        <h1>من نحن ؟</h1>
+        <div class="line"></div>
+        <p>كل المعلومات عنا هنا</p>
+      </div>
+
+      <div class="box-who">
+        <div class="text-who">
+          <h2>مطاعم سريعة</h2>
+          <p>
+            موقع مطاعم سريعة هو موقع يضم جميع المطاعم السريعة في مكان واحد
+            لتختار من المطعم الذي تحبة ونعرض لك افضل العروض لهم
+          </p>
+
+          <strong>اختر من المطعم الذي تحبة</strong>
+        </div>
+
+        <div class="box-img">
+          <img src="klwan.png" alt="img"/>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------>
+    <!------------------------End who----------------------------->
+    <!------------------------------------------------------------>
+
+    <!------------------------------------------------------------>
+    <!------------------------Start Home-------------------------->
+    <!------------------------------------------------------------>
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box" style="background: url(mac5.png)">
+              <div class="content">
+                <span>تخفيض %40</span>
+                <h3>برجر حجم كبير ثلث طبقات</h3>
+                <a href="" class="btn">شاهد المزيد</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box" style="background: url(pizza2.png)">
+              <div class="content">
+                <span>تخفيض %20</span>
+                <h3>بيتزا مشكل جبن</h3>
+                <a href="" class="btn">شاهد المزيد</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box" style="background: url(kfc3.png)">
+              <div class="content">
+                <span>تخفيض %10</span>
+                <h3>بوكس فراخ كنتاكي حااار</h3>
+                <a href="" class="btn">شاهد المزيد</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box" style="background: url(mac4.png)">
+              <div class="content">
+                <span>عرض لفترة محدودة %40</span>
+                <h3>برجر ماك الجديد</h3>
+                <a href="" class="btn">شاهد المزيد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!------------------------------------------------------------>
+    <!------------------------End Home---------------------------->
+    <!------------------------------------------------------------>
+
+    <!------------------------------------------------------------>
+    <!------------------------Start Footer------------------------>
+    <!------------------------------------------------------------>
+
+    <section class="footer" id="contact">
+      <span class="overlay"></span>
+
+      <div class="text-footer">
+        <h1>تواصل معنا</h1>
+        <div class="line"></div>
+        <p>اتمني ان تكون اسمتعت معنا</p>
+      </div>
+
+      <div class="logo">
+        <div class="path">
+          <a href="faster.css"><img src="logo2.jpg" /></a>
+          <p>
+            موقع مطاعم سريعة هو يضم كل مطاعم الاكل السريع تستطيع تختار المطعم
+            الذي تريده
+          </p>
+
+          <div class="icon-media">
+            <a
+              class="twitter"
+              href="https://twitter.com/debugcompany"
+              target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+            <a
+              class="facebook"
+              href="https://www.facebook.com/debugcompany"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a
+              class="youtube"
+              href="https://www.youtube.com/channel/UCrwy4RqkEMchoEUqiiY2Pyw"
+              target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a class="whatsapp" href=" tel:01203371825" target="_blank"
+              ><i class="fab fa-whatsapp-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="icon-footer">
+          <a href="https://www.mcdonalds.eg/ar/" target="_blank" alt="img"
+            ><img src="mac.png"
+          /></a>
+          <a href="https://www.egypt.kfc.me/ar/" target="_blank" alt="img"
+            ><img src="kfclogo.png"
+          /></a>
+          <a href="https://www.papajohnsegypt.com/?lang=ar" target="_blank" alt="img"
+            ><img src="papajons.png"
+          /></a>
+          <a href="https://www.bk.com/"
+            ><img src="brgerking.png" target="_blank" alt="img"
+          /></a>
+        </div>
+      </div>
+
+      <h2 class="rights" style="color: rgb(255, 255, 255)">
+        مطاعم سريعة 2022 © جميع الحقوق محفوظة
+      </h2>
+    </section>
+
+    <!------------------------------------------------------------>
+    <!------------------------End Footer-------------------------->
+    <!------------------------------------------------------------>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="faster.css"></script>
+  </body>
+</html>
