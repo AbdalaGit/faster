@@ -595,6 +595,7 @@ header.active {
     width: 100vw;
     height: 100vh;
     background-color: #000;
+    overflow: hidden;
 }
 
 .text-footer {
@@ -774,6 +775,11 @@ video {
         justify-content: center;
         align-items: center;
     }
+
+    header .navbar .link{
+        text-align: center;
+        margin: 0 0;
+    }
 }
 
 @media (min-width: 250px) and (max-width: 400px) {
@@ -926,6 +932,10 @@ video {
         font-size: 25px;
     }
 
+    .footer{
+        height: calc(100vh + 20px);
+    }
+
     .footer .logo {
         padding-top: 100px;
         flex-direction: column;
@@ -951,8 +961,8 @@ video {
     }
 
     .footer .icon-footer img {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 }
 
