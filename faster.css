@@ -710,6 +710,10 @@ header.active {
     z-index: 5;
 }
 
+.footer span{
+    color: var(--ColorOne);
+}
+
 video {
     position: absolute;
     z-index: 1;
